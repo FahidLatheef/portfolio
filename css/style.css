@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+*/
 :root {
-    --yellow: #f9ca24;
+    /*--yellow: #f9ca24;*/
+    --yellow: rgb(224, 200, 93);
 }
 
 * {
-    font-family: 'Ubuntu';
+    font-family: "Gill Sans", sans-serif;
     margin: 0;
     padding: 0;
     /*box-sizing: border-box;*/
     text-decoration: none;
     outline: none;
     border: none;
-    transition: all .2s linear;
 }
 
 *::selection {
@@ -39,8 +39,6 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background: rgb(0, 24, 0);
-    overflow-x: hidden;
-    padding-left: 35rem;
 }
 
 section {
@@ -81,20 +79,18 @@ section {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    height: 100%;
-    width: 35rem;
+
     background: rgb(0, 40, 0);
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-flow: column;
+    justify-content: space-around;
+    flex-flow: row;
     text-align: center;
 }
 
+.user {
+    margin-left: 0%;
+}
 header .user img {
     height: 17rem;
     width: 17rem;
@@ -115,7 +111,7 @@ header .user .post {
 }
 
 header .navbar {
-    width: 100%;
+    width: 20%;
 }
 
 header .navbar ul {
@@ -254,7 +250,7 @@ header .navbar ul li a:hover {
 
 
 .education .box-container .box {
-    width: 27rem;
+    width: 40rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid #fff;
@@ -282,26 +278,13 @@ header .navbar ul li a:hover {
 
 
 .education .box-container .box p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #eee;
     padding: 1rem 0;
 }
 
 
 
-.education .box-container .box i {
-    position: absolute;
-    top: -1.5rem;
-    left: -2.5rem;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    color: #fff;
-    background: var(--yellow);
-}
 
 
 
@@ -316,8 +299,8 @@ header .navbar ul li a:hover {
 
 
 .portfolio .box-container .box {
-    height: 22rem;
-    width: 22rem;
+    height: 30rem;
+    width: 30rem;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
@@ -342,7 +325,7 @@ header .navbar ul li a:hover {
     position: relative;
     margin: auto;
     font-size: medium;
-    color: #f9ca24;
+    color: var(--yellow);
 }
 
 
